@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" sizes="512x512" href="eve.png">
+<link rel="icon" type="image/png" sizes="192x192" href="eve.png">
+<link rel="apple-touch-icon" href="eve.png">
+
+<p style="text-align:center; margin-top:50px;">
+  <a href="index.html" style="color:#d4af37; text-decoration:none;">← Back to Home</a>
+</p>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EVRIC Watches Collection</title>
+  <link rel="stylesheet" href="style.css" /> <!-- optional, if you want to share same styles -->
+  <style>
+    body { background:#0a0a0a; color:#d4af37; font-family:Georgia,serif; }
+    h1 { text-align:center; margin-top:50px; letter-spacing:3px; }
+    .product-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+      max-width:1200px;
+      margin:60px auto;
+      padding:0 20px;
+    }
+    .product-card {
+      background:#1a1a1a;
+      border:2px solid #d4af37;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 6px 12px rgba(212,175,55,0.3);
+    }
+    .product-card img { width:100%; height:280px; object-fit:cover; }
+    .product-info { padding:20px; }
+    .product-name { font-size:1.3rem; font-weight:600; margin-bottom:10px; }
+    .product-desc { color:#e6d894; margin-bottom:15px; }
+    .product-price { font-size:1.2rem; font-weight:700; color:#d4af37; }
+    a.whatsapp-btn {
+      display:inline-block; margin-top:15px; padding:10px 25px;
+      background:#25D366; color:#000; border-radius:30px; text-decoration:none; font-weight:700;
+    }
+  </style>
+</head>
+<body>
+  <h1>Our Watch Collection</h1>
+  <div class="product-grid">
+<a href="evric-prime.html" style="text-decoration:none; color:inherit;">
+    <div class="product-card">
+      <img src="sui.jpg" alt="EVRIC Prime">
+      <div class="product-info">
+        <div class="product-name">EVRIC Prime</div>
+        <div class="product-desc">Automatic movement, sapphire glass, 41 mm case.</div>
+        <div class="product-price">Rs 145,000</div>
+        <a class="whatsapp-btn" href="https://wa.me/923212292015?text=Hi%20EVRIC%2C%20I'm%20interested%20in%20EVRIC%20Prime.">Chat to Order</a>
+      </div>
+    </div>
+    <!-- Duplicate more product-card blocks here -->
+  </div>
+</body>
+</html>
