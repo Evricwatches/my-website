@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" sizes="512x512" href="eve.png">
+<link rel="icon" type="image/png" sizes="192x192" href="eve.png">
+<link rel="apple-touch-icon" href="eve.png">
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EVRIC Watches - Luxury Timepieces</title>
+  <style>
+/* Floating WhatsApp button */
+.whatsapp-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 9999; /* always on top */
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+.whatsapp-float:hover {
+  transform: translateY(-2px);
+  background: #1ea955;
+  box-shadow: 0 14px 26px rgba(37, 211, 102, 0.5);
+}
+.whatsapp-float svg {
+  width: 28px;
+  height: 28px;
+  fill: #0a0a0a; /* icon color */
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: #0a0a0a;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+  box-shadow: 0 6px 12px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ea955;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.6);
+  transform: translateY(-2px);
+}
+
+.contact-details {
+  margin: 0 0 20px 0;
+  padding: 14px 16px;
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+  background: #111;
+  color: #d4af37;
+  line-height: 1.7;
+}
+.contact-details a {
+  color: #f0d56b;
+  text-decoration: none;
+}
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.header-spacer {
+  width: 120px; /* same approx width as your logo */
+  height: 1px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: linear-gradient(90deg, #1a1a1a, #111);
+}
+
+.welcome-center {
+  flex: 1;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #d4af37;
+  letter-spacing: 5px;
+}
+
+
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #0a0a0a;
+      color: #d4af37;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: linear-gradient(90deg, #1a1a1a, #111);
+    }
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  background: linear-gradient(90deg, #1a1a1a, #111);
+}
+
+.logo { 
+  flex: 1 1 0;        /* left side takes equal space */
+}
+
+nav {
+  flex: 1 1 0;        /* right side takes equal space */
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.welcome-center {
+  flex: 0 0 auto;     /* fixed center block */
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #d4af37;
+  letter-spacing: 5px;
+}
+
+
+    .logo img {
+      height: 120px;
+      width: auto;
+      cursor: pointer;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #d4af37;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    nav a:hover {
+      color: #f0d56b;
+    }
+
+    /* Hero section with logo background image */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      text-align: center;
+      padding: 0 20px;
+      background-image: url('eva.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      background-color: #0a0a0a;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 10, 10, 0.85);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      color: #d4af37;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+      letter-spacing: 4px;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+      font-weight: 400;
+      color: #f5e19d;
+    }
+
+    .btn-primary {
+      background-color: #d4af37;
+      color: #0a0a0a;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      box-shadow: 0 8px 15px rgba(212,175,55,0.4);
+    }
+
+    .btn-primary:hover {
+      background-color: #f0d56b;
+      box-shadow: 0 10px 20px rgba(240,213,107,0.6);
+    }
+
+    .products {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .products h2 {
+      text-align: center;
+      font-size: 2.75rem;
+      margin-bottom: 40px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background-color: #1a1a1a;
+      border: 2px solid #d4af37;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(212,175,55,0.3);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(212,175,55,0.6);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .product-desc {
+      flex-grow: 1;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+      color: #e6d894;
+    }
+
+    .product-price {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: #d4af37;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #111;
+      color: #666040;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #222;
+      margin-top: 60px;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+
+<header>
+  <div class="logo">
+    <img src="eve.png" alt="EVRIC Logo" />
+  </div>
+
+  <div class="welcome-center">---WELCOME TO EVRIC---</div>
+
+  <nav>
+    <a href="#collections">Collections</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>EVRIC Watches</h1>
+      <p>Timeless Elegance. Distinguished Craftsmanship. Your Legacy on Your Wrist.</p>
+      <a href="watches.html" class="btn-primary">Explore Collection</a>
+
+    </div>
+  </section>
+
+  <section class="products" id="collections">
+    <h2>Our Exclusive Collections</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1539887544659-1343f48b9aa4?auto=format&fit=crop&w=600&q=80" alt="Luxury Watch 1" />
+        <div class="product-info">
+          <div class="product-name">The Prestige</div>
+          <div class="product-desc">Classic gold plated watch with sapphire crystal glass and leather strap.</div>
+          <div class="product-price">$4,299</div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?auto=format&fit=crop&w=600&q=80" alt="Luxury Watch 2" />
+        <div class="product-info">
+          <div class="product-name">The Legacy</div>
+          <div class="product-desc">Swiss automatic movement with diamond-studded dial and titanium case.</div>
+          <div class="product-price">$7,499</div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80" alt="Luxury Watch 3" />
+        <div class="product-info">
+          <div class="product-name">The Monarch</div>
+          <div class="product-desc">Bold black and gold chronograph with chronometer certification.</div>
+          <div class="product-price">$5,899</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about" style="max-width: 900px; margin: 60px auto; padding: 0 20px; color:#c7b643;">
+    <h2 style="text-align:center; font-size:2.5rem; margin-bottom:30px;">About EVRIC</h2>
+    <p style="font-size:1.1rem; line-height:1.75;">
+      EVRIC represents the pinnacle of luxury watchmaking. Combining traditional craftsmanship with innovative design, our timepieces are created for those who appreciate sophistication and exclusivity. Each watch is meticulously assembled, ensuring precision and perfection in every tick.
+    </p>
+  </section>
+
+  <section class="contact" id="contact" style="max-width: 900px; margin: 60px auto 100px auto; padding: 20px; background-color: #1a1a1a; border: 2px solid #d4af37; border-radius: 15px; color: #d4af37;">
+    <h2 style="text-align:center; font-size:2.5rem; margin-bottom:30px;">Contact Us</h2>
+<div class="contact-details">
+  <h3 style="margin-bottom:12px;">Direct Contact</h3>
+
+  <p><strong>Hassam Ahmmed:</strong>
+    <a href="tel:+923212292015">+92 321 2292015</a>
+  </p>
+
+  <p><strong>Abdullah Amir:</strong>
+    <a href="tel:+923204144064">+92 320 4144064</a>
+  </p>
+
+  <p><strong>Email:</strong>
+    <a href="mailto:ericwatchespk@gmail.com">ericwatchespk@gmail.com</a>
+  </p>
+<h2 style="text-align:center; font-size:2.5rem; margin-bottom:30px;">Contact Us</h2>
+<div class="whatsapp-wrap" style="text-align:center; margin-bottom:20px;">
+  <a href="https://wa.me/923212292015" target="_blank" class="whatsapp-btn">
+    💬 Chat on WhatsApp
+  </a>
+</div>
+
+</div>
+
+    <form style="display:flex; flex-direction: column; gap: 15px; font-size:1.1rem;">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Full Name" style="padding: 12px; background: #111; border: 1px solid #d4af37; border-radius: 8px; color: #d4af37;" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" style="padding: 12px; background: #111; border: 1px solid #d4af37; border-radius: 8px; color: #d4af37;" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." style="padding: 12px; background: #111; border: 1px solid #d4af37; border-radius: 8px; color: #d4af37;" required></textarea>
+
+      <button type="submit" class="btn-primary" style="align-self: center; max-width: 200px;">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2024 EVRIC Watches. All Rights Reserved.
+  </footer>
+<a
+  href="https://wa.me/923212292015"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener"
+  aria-label="Chat on WhatsApp"
+  title="Chat on WhatsApp"
+>
+  <!-- WhatsApp icon (inline SVG) -->
+  <svg viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M19.11 17.37c-.28-.14-1.64-.81-1.9-.9-.26-.1-.45-.14-.64.14s-.73.9-.9 1.08c-.17.18-.33.2-.61.07-.28-.14-1.18-.43-2.25-1.36-.83-.72-1.39-1.6-1.55-1.87-.16-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.16.18-.28.28-.47.1-.2.05-.36-.02-.5-.07-.14-.64-1.55-.88-2.12-.23-.56-.47-.48-.64-.48l-.55-.01c-.2 0-.5.07-.76.36-.26.28-1 1-1 2.44s1.03 2.83 1.18 3.02c.14.2 2.03 3.1 4.92 4.34.69.3 1.22.48 1.64.62.69.22 1.32.19 1.82.12.56-.08 1.64-.67 1.87-1.31.23-.65.23-1.2.16-1.31-.07-.11-.25-.18-.53-.32zM16.09 3.2c-7.14 0-12.94 5.8-12.94 12.94 0 2.28.6 4.53 1.75 6.51l-1.86 6.79 6.97-1.82c1.94 1.06 4.13 1.62 6.37 1.62 7.14 0 12.94-5.8 12.94-12.94S23.23 3.2 16.09 3.2zm0 23.44c-2.03 0-4.02-.54-5.76-1.57l-.41-.24-4.13 1.08 1.1-4.01-.26-.41a10.95 10.95 0 0 1-1.69-5.75c0-6.05 4.93-10.98 10.98-10.98s10.98 4.93 10.98 10.98-4.93 10.98-10.98 10.98z"/>
+  </svg>
+</a>
+
+</body>
+</html>
