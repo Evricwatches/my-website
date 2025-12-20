@@ -317,6 +317,63 @@ nav {
       margin-top: 60px;
       letter-spacing: 1px;
     }
+/* ===== MOBILE FIXES ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 80px;
+  }
+
+  .welcome-center {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin: 10px 0;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    height: 70vh;
+    background-size: cover;
+    padding: 0 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .product-card img {
+    height: auto;
+  }
+
+  .products h2 {
+    font-size: 2rem;
+  }
+
+  .about, .contact {
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 15px 10px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -349,30 +406,18 @@ nav {
 
   <section class="products" id="collections">
     <h2>Our Exclusive Collections</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1539887544659-1343f48b9aa4?auto=format&fit=crop&w=600&q=80" alt="Luxury Watch 1" />
-        <div class="product-info">
-          <div class="product-name">The Prestige</div>
-          <div class="product-desc">Classic gold plated watch with sapphire crystal glass and leather strap.</div>
-          <div class="product-price">$4,299</div>
-        </div>
+   <div class="product-grid">
+<a href="Royal Gold.html" style="text-decoration:none; color:inherit;">
+    <div class="product-card">
+      <img src="watch.jpeg" alt="Royal Gold">
+      <div class="product-info">
+        <div class="product-name">EVRIC ROYAL GOLD</div>
+        <div class="product-desc"> Rolex Watch Golden colour Swiss made.</div>
+        <div class="product-price">Rs 3800</div>
+        <a class="whatsapp-btn" href="https://wa.me/923212292015?text=Hi%20EVRIC%2C%20I'm%20interested%20in%20EVRIC%20Prime.">Chat to Order</a>
       </div>
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?auto=format&fit=crop&w=600&q=80" alt="Luxury Watch 2" />
-        <div class="product-info">
-          <div class="product-name">The Legacy</div>
-          <div class="product-desc">Swiss automatic movement with diamond-studded dial and titanium case.</div>
-          <div class="product-price">$7,499</div>
-        </div>
       </div>
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80" alt="Luxury Watch 3" />
-        <div class="product-info">
-          <div class="product-name">The Monarch</div>
-          <div class="product-desc">Bold black and gold chronograph with chronometer certification.</div>
-          <div class="product-price">$5,899</div>
-        </div>
+      
       </div>
     </div>
   </section>
@@ -389,9 +434,6 @@ nav {
 <div class="contact-details">
   <h3 style="margin-bottom:12px;">Direct Contact</h3>
 
-  <p><strong>Hassam Ahmmed:</strong>
-    <a href="tel:+923212292015">+92 321 2292015</a>
-  </p>
 
   <p><strong>Abdullah Amir:</strong>
     <a href="tel:+923204144064">+92 320 4144064</a>
